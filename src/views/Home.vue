@@ -1,41 +1,26 @@
 <template>
   <div class="home">
-    <top-nav></top-nav>
-    <announcement v-if="active === 0" class="midContent"></announcement>
-    <search v-if="active === 1" class="midContent"></search>
-    <release v-if="active === 2" class="midContent"></release>
-    <user v-if="active === 3" class="midContent"></user>
-    <tab @active="changeIndex"></tab>
+    <div class="nav">
+      <van-nav-bar title="校园失物招领系统" class="nav-bar" fixed />
+    </div>
+    <tab></tab>
+    
   </div>
 </template>
 
 <script>
-  import Tab from '../components/Tab'
-  import TopNav from '../components/TopNav.vue'
-
-  import Announcement from './conponents/Announcement.vue'
-  import Release from './conponents/Release'
-  import Search from './conponents/Search'
-  import User from './conponents/User'
-
+import Tab from '../components/Tab.vue'
   export default {
     name: 'Home',
-    components: {
-      Tab,
-      TopNav,
-      Announcement,
-      Release,
-      Search,
-      User
-    },
+    components: {Tab},
     data() {
       return {
-        active: 0
+        active:'announcement'
       }
     },
     methods: {
       changeIndex(data) {
-        this.active = data
+        this.$router.push('/' + data)
       }
     }
   }

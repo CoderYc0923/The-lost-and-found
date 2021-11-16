@@ -48,4 +48,7 @@
 </script>
 
 <style lang="less" scoped>
+.announcement {
+  margin-top: 46px;
+}
 </style>

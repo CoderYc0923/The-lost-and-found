@@ -1,6 +1,6 @@
 <template>
   <div class="release">
-    <van-form @submit="onSubmit">
+    <van-form @submit="submit">
       <van-field v-model="formData.title" name="失物名称" label="失物名称" placeholder="失物名称" />
       <van-field v-model="formData.qqnumber" name="QQ" label="QQ" placeholder="QQ账号" />
       <van-field v-model="formData.wxnumber" name="微信" label="微信" placeholder="微信账号" />
@@ -46,6 +46,6 @@ import { Toast } from 'vant';
 
 <style lang="less" scoped>
   .release {
-    margin-top: 10px;
+    margin-top: 46px;
   }
 </style>

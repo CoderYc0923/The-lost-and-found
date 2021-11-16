@@ -1,38 +1,25 @@
 <template>
   <div class="tab">
-    <van-tabbar v-model="active" @change="onChange">
-      <van-tabbar-item icon="home-o">首页</van-tabbar-item>
-      <van-tabbar-item icon="search">寻找</van-tabbar-item>
-      <van-tabbar-item icon="bullhorn-o">发布</van-tabbar-item>
-      <van-tabbar-item icon="user-circle-o">我的</van-tabbar-item>
+    <van-tabbar route>
+      <van-tabbar-item to="/announcement" icon="home-o">首页</van-tabbar-item>
+      <van-tabbar-item to="/search" icon="search">寻找</van-tabbar-item>
+      <van-tabbar-item to="/release" icon="bullhorn-o">发布</van-tabbar-item>
+      <van-tabbar-item to="/user" icon="user-circle-o">我的</van-tabbar-item>
     </van-tabbar>
+    <keep-alive>
+      <router-view />
+    </keep-alive>
   </div>
 </template>
 
 <script>
-  import {
-    Tabbar,
-    TabbarItem
-  } from 'vant';
   export default {
-    name: 'Tab',
-    components:{
-      Tabbar,
-      TabbarItem
-    },
-    data() {
-      return {
-        active:0
-      }
-    },
-    methods: {
-      onChange() {
-        this.$emit('active',this.active)
-      }
-    }
+
   }
 </script>
 
-<style>
-
+<style lang="less" scoped>
+  ::v-deep .van-nav-bar__title {
+      font-weight: 700;
+    }
 </style>
