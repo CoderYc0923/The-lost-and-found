@@ -15,13 +15,11 @@ import Tab from '../components/Tab.vue'
     components: {Tab},
     data() {
       return {
-        active:'announcement'
+        
       }
     },
     methods: {
-      changeIndex(data) {
-        this.$router.push('/' + data)
-      }
+      
     }
   }
 </script>

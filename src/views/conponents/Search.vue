@@ -71,7 +71,7 @@ import { mapActions } from "vuex";
         this.SetData(item)
         this.$router.push('/detail')
       }
-    }
+    },
   }
 </script>
 

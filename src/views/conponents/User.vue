@@ -1,7 +1,7 @@
 <template>
   <div class="user">
     <div class="bg">
-      <div class="avatar"></div>
+      <div class="profile"></div>
     </div>
     <div class="btn" v-if="isLogin === false">
       <van-button round block type="info" native-type="submit" @click="showRegister" class="register">注册</van-button>
@@ -81,7 +81,7 @@
       position: relative;
       height: 400px;
 
-      .avatar {
+      .profile {
         position: absolute;
         top: 60%;
         left: 50%;

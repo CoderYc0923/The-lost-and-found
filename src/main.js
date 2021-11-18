@@ -6,9 +6,31 @@ import router from './router'
 import store from "./store";
 
 // vant
-import { Tabbar, TabbarItem, NavBar, List, Cell,Tab, Tabs,Step, Steps, Field,Form ,Button,Uploader,Toast,Card,ActionSheet } from 'vant';
+import {
+  Tabbar,
+  TabbarItem,
+  NavBar,
+  List,
+  Cell,
+  Tab,
+  Tabs,
+  Step,
+  Steps,
+  Field,
+  Form,
+  Button,
+  Uploader,
+  Toast,
+  Card,
+  ActionSheet,
+  Grid,
+  GridItem,
+  Image,
+  ImagePreview,
+  Overlay 
+} from 'vant';
 
-Vue.use(Tabbar).use(TabbarItem).use(NavBar).use(List).use(Cell).use(Tab).use(Tabs).use(Step).use(Steps).use(Field).use(Form).use(Button).use(Uploader).use(Toast).use(Card).use(ActionSheet)
+Vue.use(Tabbar).use(TabbarItem).use(NavBar).use(List).use(Cell).use(Tab).use(Tabs).use(Step).use(Steps).use(Field).use(Form).use(Button).use(Uploader).use(Toast).use(Card).use(ActionSheet).use(Grid).use(GridItem).use(Image).use(ImagePreview).use(Overlay)
 
 Vue.config.productionTip = false
 

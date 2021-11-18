@@ -5,12 +5,12 @@ const detail = {
   mutations:{
     saveData(state,data) {
       state.data = data
-    }
+    },
   },
   actions:{
     SetData({commit},data) {
-      commit('SET_DATA',data)
-    }
+      commit('saveData',data)
+    },
   },
   getters:{
     GetData:(state) => state.data
