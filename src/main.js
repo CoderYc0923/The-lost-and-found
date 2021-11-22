@@ -27,10 +27,12 @@ import {
   GridItem,
   Image,
   ImagePreview,
-  Overlay 
+  Overlay,
+  Badge,
+  Search,
 } from 'vant';
 
-Vue.use(Tabbar).use(TabbarItem).use(NavBar).use(List).use(Cell).use(Tab).use(Tabs).use(Step).use(Steps).use(Field).use(Form).use(Button).use(Uploader).use(Toast).use(Card).use(ActionSheet).use(Grid).use(GridItem).use(Image).use(ImagePreview).use(Overlay)
+Vue.use(Tabbar).use(TabbarItem).use(NavBar).use(List).use(Cell).use(Tab).use(Tabs).use(Step).use(Steps).use(Field).use(Form).use(Button).use(Uploader).use(Toast).use(Card).use(ActionSheet).use(Grid).use(GridItem).use(Image).use(ImagePreview).use(Overlay).use(Badge).use(Search)
 
 Vue.config.productionTip = false
 

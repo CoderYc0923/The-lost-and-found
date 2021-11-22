@@ -14,6 +14,8 @@
           </van-grid-item>
         </van-grid>
       </div>
+      <div class="divide"></div>
+      <leave-messages class="leave-messages"></leave-messages>
     </div>
   </div>
 </template>
@@ -24,8 +26,12 @@ import { ImagePreview } from 'vant';
     mapGetters,
     mapActions
   } from "vuex";
+  import LeaveMessages from './LeaveaMessages.vue'
   export default {
     name: 'Detail',
+    components:{
+      LeaveMessages
+    },
     data() {
       return {
         data: {},
@@ -112,6 +118,12 @@ import { ImagePreview } from 'vant';
         margin-top: 10px;
         margin-left: 25px;
         font-size: 14px;
+      }
+
+      .divide {
+        height: 0;
+        margin: 0 15px;
+        border: .5px solid #F7F8F9;
       }
     }
   }
